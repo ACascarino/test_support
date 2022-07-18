@@ -15,11 +15,9 @@ from typing import Sequence
 from Pyxsim.xmostest_subprocess import call_get_output
 from . import pyxsim
 
-clean_only = False
-
 
 # This function is called automatically by the runners
-def _build(xe_path, build_config=None, env={}, do_clean=False, build_options=[]):
+def _build(xe_path, build_config=None, env={}, do_clean=False, clean_only= False, build_options=[]):
 
     # Work out the Makefile path
     path = None
